@@ -39,6 +39,7 @@ namespace ppredictor
     _det_predictor = std::unique_ptr<PPredictor>(
         new PPredictor{_config.thread_num, NET_OCR, _config.mode});
     _det_predictor->init_from_file(det_model_path);
+    // std::cout<<_det_predictor->get_predictor()->GetVersion()<<"\n";
 
     _rec_predictor = std::unique_ptr<PPredictor>(
         new PPredictor{_config.thread_num, NET_OCR_INTERNAL, _config.mode});

@@ -119,7 +119,7 @@ bool check_mrz(int index, std::string &ch)
 int pp_ocr(const cv::Mat &image)
 {
 
-  std::string det_model_path = "/sdcard/orc/ch_det_mv3_db_opt.nb";
+  std::string det_model_path = "/sdcard/orc/ch_ppocr_mobile_v1.1_det_prune_opt.nb";
   // std::string rec_model_path = "/sdcard/orc/en_ppocr_mobile_v1.1_rec_opt.nb";
   std::string rec_model_path = "/sdcard/orc/ch_ppocr_mobile_v1.1_rec_quant_opt.nb";
   std::string cls_model_path = "/sdcard/orc/ch_ppocr_mobile_v1.1_cls_quant_opt.nb";
